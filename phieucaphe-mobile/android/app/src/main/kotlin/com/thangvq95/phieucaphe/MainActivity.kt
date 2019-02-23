@@ -1,4 +1,4 @@
-package com.thangvq95.phieucaphemobile
+package com.thangvq95.phieucaphe
 
 import android.os.Bundle
 
