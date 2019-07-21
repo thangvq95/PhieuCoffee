@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08feeeeb-b3c0-4134-b331-f8351d492dc6" name="Default Changelist" comment="" />
+    <list default="true" id="08feeeeb-b3c0-4134-b331-f8351d492dc6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/phieucaphe-web/lib/resouces/app_assest.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phieucaphe-web/lib/resouces/styles.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phieucaphe-web/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phieucaphe-web/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phieucaphe-web/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/phieucaphe-web/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/phieucaphe-web/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phieucaphe-web/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/phieucaphe-web/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phieucaphe-web/lib/widgets/navbar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/phieucaphe-web/lib/widgets/navbar.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phieucaphe-web/lib/widgets/sendbtn.dart" beforeDir="false" afterPath="$PROJECT_DIR$/phieucaphe-web/lib/widgets/sendbtn.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phieucaphe-web/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/phieucaphe-web/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phieucaphe-web/web/assets/Montserrat-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/phieucaphe-web/web/assets/fonts/Montserrat-Bold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phieucaphe-web/web/assets/Montserrat-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/phieucaphe-web/web/assets/fonts/Montserrat-Regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phieucaphe-web/web/assets/hiraminpro-w3.otf" beforeDir="false" afterPath="$PROJECT_DIR$/phieucaphe-web/web/assets/fonts/hiraminpro-w3.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phieucaphe-web/web/assets/image_01.png" beforeDir="false" afterPath="$PROJECT_DIR$/phieucaphe-web/web/assets/images/image_01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phieucaphe-web/web/assets/menu.png" beforeDir="false" afterPath="$PROJECT_DIR$/phieucaphe-web/web/assets/images/menu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phieucaphe-web/web/assets/sent.png" beforeDir="false" afterPath="$PROJECT_DIR$/phieucaphe-web/web/assets/images/sent.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phieucaphe-web/web/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/phieucaphe-web/web/main.dart" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,12 +35,12 @@
     <option name="width" value="1261" />
     <option name="height" value="717" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -39,6 +57,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -76,26 +95,26 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" visible="true" weight="0.32980332" />
-      <window_info id="Structure" side_tool="true" />
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="Resources Explorer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
       <window_info id="Captures" order="0" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="TODO" />
-      <window_info anchor="bottom" id="Run" />
-      <window_info anchor="bottom" id="Debug" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Flutter Performance" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Flutter Inspector" />
-      <window_info anchor="right" id="Flutter Outline" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.33509833" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Designer" order="4" />
+      <window_info id="Resources Explorer" order="5" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="0" />
+      <window_info anchor="bottom" id="TODO" order="1" />
+      <window_info anchor="bottom" id="Debug" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Flutter Performance" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info anchor="right" id="Theme Preview" order="1" />
+      <window_info anchor="right" id="Flutter Inspector" order="2" />
+      <window_info anchor="right" id="Flutter Outline" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
     </layout>
   </component>
 </project>
