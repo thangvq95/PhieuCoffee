@@ -1,43 +1,13 @@
-# Project
+#
+D:\Flutter\SDK\flutter\.pub-cache\bin
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.3.
+flutter packages pub global run webdev build
 
-## Development server
+1.flutter pub global activate webdev
+2.flutter pub upgrade
+3. Run
+-- Run instead of "webdev serve"
+flutter packages pub global run webdev serve
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-# How to build and run locally
-Go to upup_toolset directory and perform the following:
-
-Dart 2.0
-1. Install webdev: pub global activate webdev
-2. Build: pub global run webdev build
-3. Run: pub global run webdev serve
-4. Access http://localhost:8080
-
-Dart 1.0
-1. Build: pub build
-2. Run: pub run bin/main.dart
-3. Access http://localhost:9999
-
-To automatically deploy changes, use this command instead: pub serve
+-- Only need ctrl+s -> It will be auto loading
+flutter packages pub global run webdev serve --auto restart

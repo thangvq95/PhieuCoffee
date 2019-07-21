@@ -1,6 +1,7 @@
-import 'package:angular/angular.dart';
-import 'package:phieucaphe/app_component.template.dart' as ng;
+import 'package:flutter_web_ui/ui.dart' as ui;
+import 'package:phieucaphe/main.dart' as app;
 
-void main() {
-  runApp(ng.AppComponentNgFactory);
+main() async {
+  await ui.webOnlyInitializePlatform();
+  app.main();
 }
