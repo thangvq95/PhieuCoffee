@@ -1,4 +1,4 @@
-import 'package:flutter_web/material.dart';
+import 'package:flutter/material.dart';
 import '../utils/responsiveLayout.dart';
 import 'sendbtn.dart';
 

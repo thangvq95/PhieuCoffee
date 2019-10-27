@@ -1,22 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="206" />
-    <option name="y" value="32" />
-    <option name="width" value="1261" />
-    <option name="height" value="717" />
+  <component name="ChangeListManager">
+    <list default="true" id="3ca86f33-2a91-42f9-86c8-c650be160abe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/fonts/DINCondensed-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Lato-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Lato-BlackItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Lato-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Lato-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Lato-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Lato-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Lato-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/Lato-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/env.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/large_child.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/resouces/styles.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/small_child.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/component/button.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/theme/app_decorator.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/theme/colors.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/theme/theme.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/theme/theme_bloc.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/utils/handle_cursor.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/responsiveLayout.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/responsiveLayout.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/navbar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/navbar.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/search.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/search.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/widgets/sendbtn.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/widgets/sendbtn.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/FontManifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/Montserrat-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/Montserrat-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/hiraminpro-w3.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/image_01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/sent.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/main.dart" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\Flutter_Web\Source\Git\PhieuCoffee\phieucaphe-web\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/phieucaphe-web.iml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1SlWLUTm5mLCPQ5PKCA8YwgKtBG" />
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="D:/Android/sdk" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
+    <property name="settings.editor.selected.configurable" value="flutter.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Flutter_Web\Source\Git\PhieuCoffee\phieucaphe-web\assets" />
+      <recent name="D:\Flutter_Web\Source\Git\PhieuCoffee\phieucaphe-web\lib\ui" />
+      <recent name="D:\Flutter_Web\Source\Git\PhieuCoffee\phieucaphe-web\web" />
+      <recent name="D:\Flutter_Web\Source\Git\PhieuCoffee\phieucaphe-web\web\assets\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Flutter_Web\Source\Git\PhieuCoffee\phieucaphe-web\assets\images" />
+      <recent name="D:\Flutter_Web\Source\Git\PhieuCoffee\phieucaphe-web" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager">
-    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" singleton="false">
       <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
       <method v="2" />
     </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3ca86f33-2a91-42f9-86c8-c650be160abe" name="Default Changelist" comment="" />
+      <created>1563680943764</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563680943764</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

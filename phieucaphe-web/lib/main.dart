@@ -1,34 +1,62 @@
-import 'package:flutter_web/material.dart';
-import 'package:phieucaphe/resouces/styles.dart';
-
+import 'dart:ui';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:oktoast/oktoast.dart';
+import 'package:phieucaphe/small_child.dart';
+import 'package:phieucaphe/ui/theme/colors.dart';
+import 'package:phieucaphe/ui/theme/theme_bloc.dart';
+import 'package:provider/provider.dart';
+import 'env.dart';
+import 'large_child.dart';
 import 'utils/responsiveLayout.dart';
 import 'widgets/navbar.dart';
-import 'widgets/search.dart';
 
-void main() => runApp(MaterialApp(
-      title: 'Flutter Landing Page',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: HomePage(),
-    ));
+void main() => Env();
 
-class HomePage extends StatelessWidget {
+class App extends StatefulWidget {
+  @override
+  _AppState createState() => _AppState();
+}
+
+class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-          gradient: LinearGradient(colors: [
-        Color(0xFFF8FBFF),
-        Color(0xFFFCFDFD),
-      ])),
-      child: Scaffold(
-        backgroundColor: Colors.transparent,
-        body: SingleChildScrollView(
-          child: Column(
-            children: <Widget>[NavBar(), Body()],
-          ),
+    return MultiProvider(
+      providers: [
+        Provider<ThemeState>.value(value: theme),
+      ],
+      child: OKToast(
+        child: HomePage(),
+      ),
+    );
+  }
+}
+
+class HomePage extends StatefulWidget {
+  @override
+  _HomePageState createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  ThemeState themeState;
+  @override
+  void didChangeDependencies() {
+    themeState = Provider.of<ThemeState>(context);
+    super.didChangeDependencies();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: themeState.theme,
+      color: Colors.white,
+      home: SingleChildScrollView(
+        child: Stack(
+          children: <Widget>[
+           Positioned.fill(child:  Image.asset("assets/images/background.jpg", fit: BoxFit.cover,),),
+            Body()
+          ],
         ),
       ),
     );
@@ -38,127 +66,81 @@ class HomePage extends StatelessWidget {
 class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ResponsiveLayout(
-      largeScreen: LargeChild(),
-      smallScreen: SmallChild(),
+    return Column(
+      children: <Widget>[
+        NavBar(),
+        ResponsiveLayout(
+          largeScreen: LargeChild(),
+          smallScreen: SmallChild(),
+        ),
+      ],
     );
   }
 }
 
-class LargeChild extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      height: 600,
-      child: Stack(
-        fit: StackFit.expand,
-        children: <Widget>[
-          FractionallySizedBox(
-            alignment: Alignment.centerRight,
-            widthFactor: .6,
-            child: Image.network(AppAsset.image_01, scale: .85),
+ThemeState get theme => ThemeState(
+      theme: ThemeData(
+        brightness: Brightness.light,
+        appBarTheme: const AppBarTheme(
+          elevation: 0.5,
+          color: Colors.white,
+          textTheme: TextTheme(
+            title: TextStyle(
+                color: AppColors.greyBlue,
+                fontFamily: 'Lato',
+                fontWeight: FontWeight.normal,
+                fontSize: 18),
           ),
-          FractionallySizedBox(
-            alignment: Alignment.centerLeft,
-            widthFactor: .6,
-            child: Padding(
-              padding: EdgeInsets.only(left: 48),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Text("Hello!",
-                      style: TextStyle(
-                          fontSize: 60,
-                          fontWeight: FontWeight.bold,
-                          fontFamily: "Montserrat-Regular",
-                          color: Color(0xFF8591B0))),
-                  RichText(
-                    text: TextSpan(
-                        text: "WellCome To ",
-                        style:
-                            TextStyle(fontSize: 60, color: Color(0xFF8591B0)),
-                        children: [
-                          TextSpan(
-                              text: "Britu",
-                              style: TextStyle(
-                                  fontSize: 60,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.black87))
-                        ]),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 12.0, top: 20),
-                    child: Text("LET’S EXPLORE THE WORLD"),
-                  ),
-                  SizedBox(
-                    height: 40,
-                  ),
-                  Search()
-                ],
-              ),
-            ),
-          )
-        ],
-      ),
-    );
-  }
-}
-
-class SmallChild extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Padding(
-        padding: EdgeInsets.all(40),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            Text(
-              "Hello!",
-              style: TextStyle(
-                  fontSize: 40,
-                  color: Color(0xFF8591B0),
-                  fontWeight: FontWeight.bold,
-                  fontFamily: "Montserrat-Regular"),
-            ),
-            RichText(
-              text: TextSpan(
-                text: 'WellCome To ',
-                style: TextStyle(fontSize: 40, color: Color(0xFF8591B0)),
-                children: <TextSpan>[
-                  TextSpan(
-                      text: 'Britu',
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 40,
-                          color: Colors.black87)),
-                ],
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 12.0, top: 20),
-              child: Text("LET’S EXPLORE THE WORLD"),
-            ),
-            SizedBox(
-              height: 30,
-            ),
-            Center(
-              child: Image.network(
-                AppAsset.image_01,
-                scale: 1,
-              ),
-            ),
-            SizedBox(
-              height: 32,
-            ),
-            Search(),
-            SizedBox(
-              height: 30,
-            )
-          ],
+        ),
+        dividerColor: AppColors.silver,
+        fontFamily: 'Lato',
+        primaryColor: AppColors.turquoise,
+        accentColor: AppColors.greyBlue,
+        cardTheme: CardTheme(
+          elevation: 0.5,
+          shape: RoundedRectangleBorder(
+            side: BorderSide(color: AppColors.silver, width: 0.5),
+            borderRadius: new BorderRadius.circular(6.0),
+          ),
+        ),
+        primaryTextTheme: const TextTheme(
+          caption: TextStyle(color: AppColors.greyBlue, fontSize: 15),
+          title: TextStyle(
+            color: AppColors.greyBlue,
+            fontSize: 18,
+            fontWeight: FontWeight.bold,
+          ),
+          body1: TextStyle(color: AppColors.grayFive, fontSize: 15),
+          body2: TextStyle(
+            color: AppColors.greyBlue,
+            fontSize: 15,
+            fontWeight: FontWeight.bold,
+          ),
+          button: TextStyle(
+            color: Colors.white,
+            fontSize: 15,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        primaryIconTheme: const IconThemeData(
+          color: AppColors.greyBlue,
+        ),
+        buttonTheme: ButtonThemeData(
+          height: 50,
+          textTheme: ButtonTextTheme.primary,
+          highlightColor: AppColors.turquoise,
+          buttonColor: AppColors.turquoise,
+          disabledColor: AppColors.turquoise.withOpacity(0.5),
+        ),
+        textTheme: const TextTheme(
+          caption: TextStyle(color: AppColors.greyBlue),
+          body1: TextStyle(color: AppColors.greyBlue),
+          button: TextStyle(
+            color: Colors.white,
+            fontSize: 15,
+            fontWeight: FontWeight.bold,
+          ),
         ),
       ),
+      devicePixelRatio: window.devicePixelRatio,
     );
-  }
-}

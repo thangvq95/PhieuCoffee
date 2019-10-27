@@ -1,4 +1,4 @@
-import 'package:flutter_web/material.dart';
+import 'package:flutter/material.dart';
 import 'package:phieucaphe/resouces/styles.dart';
 import '../utils/responsiveLayout.dart';
 
@@ -44,7 +44,7 @@ class SendBtn extends StatelessWidget {
                         : ResponsiveLayout.isMediumScreen(context) ? 6 : 8,
                   ),
                   Image.network(
-                    AppAsset.sent,
+                    'AppAsset.background_1',
                     color: Colors.white,
                     width: ResponsiveLayout.isSmallScreen(context)
                         ? 12
