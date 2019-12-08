@@ -1,13 +1,10 @@
 import 'dart:ui';
-
-import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:meta/meta.dart';
-import 'package:path_drawing/path_drawing.dart';
 import 'package:phieucaphe/ui/theme/colors.dart';
 import 'package:phieucaphe/ui/theme/theme.dart';
 
-class ThemeState extends Equatable {
+class ThemeState{
   final ThemeData theme;
   final double _devicePixelRatio;
   final double _spacingUnit; // Use getters below
@@ -24,15 +21,14 @@ class ThemeState extends Equatable {
 
   double get spacingLarge => _spacingUnit * 4;
 
+  double get spacingPaddingHorizontal => _spacingUnit * 6;
+
   double get spacingHuge => _spacingUnit * 8;
 
   double get cornerRadiusDefault => _cornerRadiusDefault;
   double get cornerRadiusMedium => _cornerRadiusDefault * 2 ;
 
   double get hairlineWidth => 1 / _devicePixelRatio;
-
-  CircularIntervalList<double> get dashInterval =>
-      CircularIntervalList([4.0, 4.0]);
 
   BorderSide get defaultBorderSide => _defaultBorderSide;
 
@@ -61,8 +57,8 @@ class ThemeState extends Equatable {
   ThemeState({
     @required this.theme,
     devicePixelRatio = 1,
-    spacingUnit = 8.0,
-    cornerRadiusDefault = 6.0,
+    spacingUnit = 10.0,
+    cornerRadiusDefault = 8.0,
   })  : assert(theme != null),
         _cornerRadiusDefault = cornerRadiusDefault,
         _spacingUnit = spacingUnit,

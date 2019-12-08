@@ -1,19 +1,23 @@
-import 'package:phieucaphe/ui/theme/colors.dart';
 import 'package:phieucaphe/ui/theme/theme_bloc.dart';
 import 'package:phieucaphe/utils/handle_cursor.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 
-class AppContainer extends StatefulWidget {
-  final String asset;
+class TextContainer extends StatefulWidget {
   final Widget child;
-  AppContainer({this.asset, this.child});
+  final String text;
+  final TextStyle style;
+  final TextStyle styleHover;
+  final VoidCallback onPressed;
+  final EdgeInsets padding;
+  final bool active;
+  TextContainer({this.text, this.child, this.style, this.styleHover, this.onPressed, this.padding, this.active = false});
 
   @override
-  _AppContainerHover createState() => _AppContainerHover();
+  _TextContainerHover createState() => _TextContainerHover();
 }
 
-class _AppContainerHover extends State<AppContainer> {
+class _TextContainerHover extends State<TextContainer> {
   bool hover = false;
   ThemeState theme;
   @override
@@ -34,15 +38,12 @@ class _AppContainerHover extends State<AppContainer> {
          hover = false;
        });
       },
-      child: Container(
-        padding: EdgeInsets.all(theme.spacingSmall),
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.all(Radius.circular(theme.cornerRadiusDefault)),
-          color: hover ? AppColors.blueGrey : Colors.transparent,
-          border: Border.all(color:  hover ?  Colors.transparent : AppColors.offWhite)
-        ),
-        child: widget.child,
-      ),
+      child: GestureDetector(
+          onTap: widget.onPressed,
+          child: Padding(
+            padding: widget.padding,
+            child: Text(widget.text, style: hover || widget.active ? widget.styleHover : widget.style),
+          )),
     );
   }
 }

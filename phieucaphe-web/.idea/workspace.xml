@@ -12,17 +12,26 @@
       <change afterPath="$PROJECT_DIR$/assets/fonts/Lato-LightItalic.ttf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/assets/fonts/Lato-Regular.ttf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/assets/images/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/ic_facebook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/ic_messenger.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/assets/images/logo.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/env.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/extensions/hover_extensions.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/large_child.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/resouces/styles.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/small_child.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/ui/component/button.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/component/image.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/screen/home/footer_section.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/screen/home/gallery_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/screen/home/type_coffee_section.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/screen/home/video_section.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/ui/theme/app_decorator.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/ui/theme/colors.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/ui/theme/theme.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/ui/theme/theme_bloc.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/utils/handle_cursor.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/widgets/constant.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/utils/responsiveLayout.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/responsiveLayout.dart" afterDir="false" />
@@ -83,20 +92,22 @@
     <property name="android.sdk.path" value="D:/Android/sdk" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
-    <property name="settings.editor.selected.configurable" value="flutter.settings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/images" />
+    <property name="settings.editor.selected.configurable" value="dart.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Flutter_Web\Source\Git\PhieuCoffee\phieucaphe-web\lib\ui\screen\home" />
+      <recent name="D:\Flutter_Web\Source\Git\PhieuCoffee\phieucaphe-web\assets\images" />
+      <recent name="D:\Flutter_Web\Source\Git\PhieuCoffee\phieucaphe-web" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Flutter_Web\Source\Git\PhieuCoffee\phieucaphe-web\assets\images" />
       <recent name="D:\Flutter_Web\Source\Git\PhieuCoffee\phieucaphe-web\assets" />
       <recent name="D:\Flutter_Web\Source\Git\PhieuCoffee\phieucaphe-web\lib\ui" />
       <recent name="D:\Flutter_Web\Source\Git\PhieuCoffee\phieucaphe-web\web" />
       <recent name="D:\Flutter_Web\Source\Git\PhieuCoffee\phieucaphe-web\web\assets\images" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Flutter_Web\Source\Git\PhieuCoffee\phieucaphe-web\assets\images" />
-      <recent name="D:\Flutter_Web\Source\Git\PhieuCoffee\phieucaphe-web" />
     </key>
   </component>
   <component name="RunDashboard">

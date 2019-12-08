@@ -19,7 +19,7 @@ class AppColors {
   static const corvette = Color(0xFFFCC79E);
   static const wisteria = Color(0xFF9A6CB0);
   static const amaranth = Color(0xFFEE4054);
-
+  static const black = Colors.black87;
   static const lightMustard = Color(0xFFFAD961);
   static const facebookBlue = Color(0xFF3B5998);
 
@@ -35,6 +35,9 @@ class AppColors {
 
   static const businessGreen = Color(0xFF476920);
   static const white = Color(0xFFFFFFFF);
+
+  static const background = white;
+  static const card = white;
 
   static const defaultGradient = LinearGradient(
     // Where the linear gradient begins and ends

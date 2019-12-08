@@ -557,6 +557,160 @@ class TextStyleOption {
         color: color,
         decoration: TextDecoration.underline,
       );
+
+  static TextStyle textCharcoalWithSize(
+      {@required double fontSize,
+        FontWeight fontWeight,
+        FontFamily fontFamily = FontFamily.Lato}) =>
+      TextStyle(
+        fontFamily: getStringFromEnum(fontFamily),
+        color: AppColors.charcoal,
+        fontSize: fontSize ?? 20,
+        fontWeight: fontWeight ?? FontWeight.normal,
+      );
+
+  static TextStyle textCharcoalBigSize({FontFamily fontFamily = FontFamily.Lato}) =>
+      TextStyle(
+        fontFamily: getStringFromEnum(fontFamily),
+        color: AppColors.charcoal,
+        fontSize: 32,
+        fontWeight: FontWeight.bold,
+      );
+
+  static TextStyle textCharcoalBigSizeNormal({FontFamily fontFamily = FontFamily.Lato}) =>
+      TextStyle(
+        fontFamily: getStringFromEnum(fontFamily),
+        color: AppColors.charcoal,
+        fontSize: 32,
+        fontWeight: FontWeight.w400,
+      );
+
+  static TextStyle textCharcoalTitle({FontFamily fontFamily = FontFamily.Lato}) =>
+      TextStyle(
+        fontFamily: getStringFromEnum(fontFamily),
+        color: AppColors.charcoal,
+        fontSize: 18,
+        fontWeight: FontWeight.bold,
+      );
+
+  static TextStyle textCharcoalTitleNormal({FontFamily fontFamily = FontFamily.Lato}) =>
+      TextStyle(
+        fontFamily: getStringFromEnum(fontFamily),
+        color: AppColors.charcoal,
+        fontSize: 18,
+        fontWeight: FontWeight.w400,
+      );
+
+  static TextStyle textCharcoalBody1(
+      {FontFamily fontFamily = FontFamily.Lato}) =>
+      TextStyle(
+        fontFamily: getStringFromEnum(fontFamily),
+        color: AppColors.charcoal,
+        fontSize: 15,
+      );
+
+  static TextStyle textCharcoalBody2(
+      {FontFamily fontFamily = FontFamily.Lato}) =>
+      TextStyle(
+        fontFamily: getStringFromEnum(fontFamily),
+        color: AppColors.charcoal,
+        fontSize: 15,
+        fontWeight: FontWeight.bold,
+      );
+
+  static TextStyle textCharcoalBody3(
+      {FontFamily fontFamily = FontFamily.Lato}) =>
+      TextStyle(
+        fontFamily: getStringFromEnum(fontFamily),
+        color: AppColors.charcoal,
+        fontSize: 13,
+      );
+
+  static TextStyle textCharcoalBody4(
+      {FontFamily fontFamily = FontFamily.Lato}) =>
+      TextStyle(
+          fontFamily: getStringFromEnum(fontFamily),
+          color: AppColors.charcoal,
+          fontSize: 13,
+          fontWeight: FontWeight.w700);
+
+  static TextStyle textBlackWithSize(
+      {@required double fontSize,
+        FontWeight fontWeight,
+        FontFamily fontFamily = FontFamily.Lato}) =>
+      TextStyle(
+        fontFamily: getStringFromEnum(fontFamily),
+        color: AppColors.black,
+        fontSize: fontSize ?? 20,
+        fontWeight: fontWeight ?? FontWeight.normal,
+      );
+
+  static TextStyle textBlackBigSize({FontFamily fontFamily = FontFamily.Lato}) =>
+      TextStyle(
+        fontFamily: getStringFromEnum(fontFamily),
+        color: AppColors.black,
+        fontSize: 32,
+        fontWeight: FontWeight.bold,
+      );
+
+  static TextStyle textBlackBigSizeNormal({FontFamily fontFamily = FontFamily.Lato}) =>
+      TextStyle(
+        fontFamily: getStringFromEnum(fontFamily),
+        color: AppColors.black,
+        fontSize: 32,
+        fontWeight: FontWeight.w400,
+      );
+
+  static TextStyle textBlackTitle({FontFamily fontFamily = FontFamily.Lato}) =>
+      TextStyle(
+        fontFamily: getStringFromEnum(fontFamily),
+        color: AppColors.black,
+        fontSize: 18,
+        fontWeight: FontWeight.bold,
+      );
+
+  static TextStyle textBlackTitleNormal({FontFamily fontFamily = FontFamily.Lato}) =>
+      TextStyle(
+        fontFamily: getStringFromEnum(fontFamily),
+        color: AppColors.black,
+        fontSize: 18,
+        fontWeight: FontWeight.w400,
+      );
+
+  static TextStyle textBlackBody1(
+      {FontFamily fontFamily = FontFamily.Lato}) =>
+      TextStyle(
+        fontFamily: getStringFromEnum(fontFamily),
+        color: AppColors.black,
+        fontSize: 15,
+      );
+
+  static TextStyle textBlackBody2(
+      {FontFamily fontFamily = FontFamily.Lato}) =>
+      TextStyle(
+        fontFamily: getStringFromEnum(fontFamily),
+        color: AppColors.black,
+        fontSize: 15,
+        fontWeight: FontWeight.bold,
+      );
+
+  static TextStyle textBlackBody3(
+      {FontFamily fontFamily = FontFamily.Lato}) =>
+      TextStyle(
+        fontFamily: getStringFromEnum(fontFamily),
+        color: AppColors.black,
+        fontSize: 13,
+      );
+
+  static TextStyle textBlackBody4(
+      {FontFamily fontFamily = FontFamily.Lato}) =>
+      TextStyle(
+          fontFamily: getStringFromEnum(fontFamily),
+          color: AppColors.black,
+          fontSize: 13,
+          fontWeight: FontWeight.w700);
+
 }
+
 
 final double BottomAppBarHeight = 50.0;

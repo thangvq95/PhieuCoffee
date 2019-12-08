@@ -1,7 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'dart:html' as html;
-
 import 'package:flutter/material.dart';
 
 class HandleCursor extends StatefulWidget {

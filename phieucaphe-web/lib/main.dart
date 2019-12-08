@@ -51,14 +51,8 @@ class _HomePageState extends State<HomePage> {
       debugShowCheckedModeBanner: false,
       theme: themeState.theme,
       color: Colors.white,
-      home: SingleChildScrollView(
-        child: Stack(
-          children: <Widget>[
-           Positioned.fill(child:  Image.asset("assets/images/background.jpg", fit: BoxFit.cover,),),
-            Body()
-          ],
-        ),
-      ),
+      home: Scaffold(
+          body: Body())
     );
   }
 }
@@ -66,14 +60,17 @@ class _HomePageState extends State<HomePage> {
 class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        NavBar(),
-        ResponsiveLayout(
-          largeScreen: LargeChild(),
-          smallScreen: SmallChild(),
-        ),
-      ],
+    return SingleChildScrollView(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: <Widget>[
+          NavBar(),
+          ResponsiveLayout(
+            largeScreen: LargeChild(),
+            smallScreen: SmallChild(),
+          ),
+        ],
+      ),
     );
   }
 }
@@ -100,7 +97,7 @@ ThemeState get theme => ThemeState(
           elevation: 0.5,
           shape: RoundedRectangleBorder(
             side: BorderSide(color: AppColors.silver, width: 0.5),
-            borderRadius: new BorderRadius.circular(6.0),
+            borderRadius: BorderRadius.circular(6.0),
           ),
         ),
         primaryTextTheme: const TextTheme(
