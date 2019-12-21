@@ -4,6 +4,7 @@ import 'package:phieucaphe/ui/screen/home/gallery_screen.dart';
 import 'package:phieucaphe/ui/screen/home/type_coffee_section.dart';
 import 'package:phieucaphe/ui/screen/home/video_section.dart';
 import 'extensions/hover_extensions.dart';
+import 'ui/screen/home/store_section.dart';
 
 class LargeChild extends StatelessWidget {
   @override
@@ -15,7 +16,8 @@ class LargeChild extends StatelessWidget {
         children: <Widget>[
           VideoSection(),
           GallerySection(),
-         TypeCoffeeSection(),
+          StoreSection(),
+          TypeCoffeeSection(),
           FooterSection()
         ],
       ),

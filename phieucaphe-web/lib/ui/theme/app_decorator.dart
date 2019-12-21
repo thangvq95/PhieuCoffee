@@ -62,6 +62,11 @@ class GradientOption {
 enum FontFamily { Lato, DINCondensed }
 
 class TextStyleOption {
+  static double title_size = 40;
+  static double text_large_size = 28;
+  static double text_small_size = 16;
+  static double text_size = 20;
+
   static getStringFromEnum(dynamic fontFamily) {
     return fontFamily.toString().split('.')[1];
   }
@@ -73,7 +78,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: Colors.white,
-        fontSize: 18,
+        fontSize: text_large_size,
         fontWeight: FontWeight.bold,
       );
 
@@ -82,7 +87,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: Colors.white,
-        fontSize: 18,
+        fontSize: text_large_size,
       );
 
   static TextStyle textWhiteBody1({FontFamily fontFamily = FontFamily.Lato}) =>
@@ -96,7 +101,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: Colors.white,
-        fontSize: 15,
+        fontSize: text_size,
         fontWeight: FontWeight.bold,
       );
 
@@ -104,7 +109,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: Colors.white,
-        fontSize: 13,
+        fontSize: text_small_size,
         fontWeight: FontWeight.w700,
       );
 
@@ -112,14 +117,14 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: Colors.white,
-        fontSize: 13,
+        fontSize: text_small_size,
       );
 
   static TextStyle textWhiteButton({FontFamily fontFamily = FontFamily.Lato}) =>
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: Colors.white,
-        fontSize: 15,
+        fontSize: text_size,
         fontWeight: FontWeight.bold,
       );
 
@@ -136,89 +141,19 @@ class TextStyleOption {
         fontWeight: fontWeight ?? FontWeight.normal,
       );
 
-  static TextStyle textTurquoiseCaption(
-          {FontFamily fontFamily = FontFamily.Lato}) =>
-      TextStyle(
-          fontFamily: getStringFromEnum(fontFamily),
-          color: AppColors.turquoise,
-          fontSize: 15);
-
-  static TextStyle textTurquoiseTitle(
-          {FontFamily fontFamily = FontFamily.Lato}) =>
-      TextStyle(
-        fontFamily: getStringFromEnum(fontFamily),
-        color: AppColors.turquoise,
-        fontSize: 18,
-        fontWeight: FontWeight.bold,
-      );
-
-  static TextStyle textTurquoiseBody1(
-          {FontFamily fontFamily = FontFamily.Lato}) =>
-      TextStyle(
-        fontFamily: getStringFromEnum(fontFamily),
-        color: AppColors.turquoise,
-        fontSize: 15,
-      );
-
-  static TextStyle textTurquoiseBody2(
-          {FontFamily fontFamily = FontFamily.Lato}) =>
-      TextStyle(
-        fontFamily: getStringFromEnum(fontFamily),
-        color: AppColors.turquoise,
-        fontSize: 15,
-        fontWeight: FontWeight.bold,
-      );
-
-  static TextStyle textTurquoiseButton(
-          {FontFamily fontFamily = FontFamily.Lato}) =>
-      TextStyle(
-        fontFamily: getStringFromEnum(fontFamily),
-        color: AppColors.turquoise,
-        fontSize: 15,
-        fontWeight: FontWeight.bold,
-      );
-
-  static TextStyle textTurquoiseBody3(
-          {FontFamily fontFamily = FontFamily.Lato}) =>
-      TextStyle(
-        fontFamily: getStringFromEnum(fontFamily),
-        color: AppColors.turquoise,
-        fontSize: 13,
-      );
-
-  static TextStyle textTurquoiseBody4(
-          {FontFamily fontFamily = FontFamily.Lato}) =>
-      TextStyle(
-        fontFamily: getStringFromEnum(fontFamily),
-        color: AppColors.turquoise,
-        fontSize: 13,
-        fontWeight: FontWeight.w700,
-      );
-
-  static TextStyle textTurquoiseWithSize(
-          {@required double fontSize,
-          FontWeight fontWeight,
-          FontFamily fontFamily = FontFamily.Lato}) =>
-      TextStyle(
-        fontFamily: getStringFromEnum(fontFamily),
-        color: AppColors.turquoise,
-        fontSize: fontSize,
-        fontWeight: fontWeight ?? FontWeight.normal,
-      );
-
   static TextStyle textGreyBlueCaption(
           {FontFamily fontFamily = FontFamily.Lato}) =>
       TextStyle(
           fontFamily: getStringFromEnum(fontFamily),
           color: AppColors.greyBlue,
-          fontSize: 15);
+          fontSize: text_size);
 
   static TextStyle textGreyBlueTitle(
           {FontFamily fontFamily = FontFamily.Lato}) =>
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.greyBlue,
-        fontSize: 18,
+        fontSize: text_large_size,
         fontWeight: FontWeight.bold,
       );
 
@@ -227,7 +162,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.greyBlue,
-        fontSize: 18,
+        fontSize: text_large_size,
         fontWeight: FontWeight.normal,
       );
 
@@ -236,7 +171,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.greyBlue,
-        fontSize: 15,
+        fontSize: text_large_size,
       );
 
   static TextStyle textGreyBlueBody2(
@@ -244,7 +179,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.greyBlue,
-        fontSize: 15,
+        fontSize: text_large_size,
         fontWeight: FontWeight.bold,
       );
 
@@ -253,7 +188,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.greyBlue,
-        fontSize: 13,
+        fontSize: text_small_size,
       );
 
   static TextStyle textGreyBlueBody4(
@@ -261,7 +196,7 @@ class TextStyleOption {
       TextStyle(
           fontFamily: getStringFromEnum(fontFamily),
           color: AppColors.greyBlue,
-          fontSize: 13,
+          fontSize: text_small_size,
           fontWeight: FontWeight.w700);
 
   static TextStyle textGreyBlueLabel1(
@@ -269,14 +204,14 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.greyBlue,
-        fontSize: 12,
+        fontSize: text_small_size,
       );
   static TextStyle textGreyBlueBody5(
           {FontFamily fontFamily = FontFamily.Lato}) =>
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.greyBlue,
-        fontSize: 24,
+        fontSize: text_large_size,
       );
 
   static TextStyle textGreyBlueLabel2(
@@ -284,7 +219,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.greyBlue,
-        fontSize: 12,
+        fontSize: text_small_size,
         fontWeight: FontWeight.bold,
       );
 
@@ -309,108 +244,10 @@ class TextStyleOption {
     );
   }
 
-  static TextStyle textBlueGreyCaption(
-          {FontFamily fontFamily = FontFamily.Lato}) =>
-      TextStyle(
-        fontFamily: getStringFromEnum(fontFamily),
-        color: AppColors.blueGrey,
-        fontSize: 15,
-      );
-
-  static TextStyle textBlueGreyTitle(
-          {FontFamily fontFamily = FontFamily.Lato}) =>
-      TextStyle(
-        fontFamily: getStringFromEnum(fontFamily),
-        color: AppColors.blueGrey,
-        fontSize: 18,
-        fontWeight: FontWeight.bold,
-      );
-
-  static TextStyle textBlueGreyBody1(
-          {FontFamily fontFamily = FontFamily.Lato}) =>
-      TextStyle(
-        fontFamily: getStringFromEnum(fontFamily),
-        color: AppColors.blueGrey,
-        fontSize: 15,
-      );
-
-  static TextStyle textBlueGreyBody2(
-          {FontFamily fontFamily = FontFamily.Lato}) =>
-      TextStyle(
-        fontFamily: getStringFromEnum(fontFamily),
-        color: AppColors.blueGrey,
-        fontSize: 15,
-        fontWeight: FontWeight.bold,
-      );
-
-  static TextStyle textBlueGreyBody3(
-          {FontFamily fontFamily = FontFamily.Lato}) =>
-      TextStyle(
-        fontFamily: getStringFromEnum(fontFamily),
-        color: AppColors.blueGrey,
-        fontSize: 13,
-      );
-
-  static TextStyle textBlueGreyBody4(
-          {FontFamily fontFamily = FontFamily.Lato}) =>
-      TextStyle(
-          fontFamily: getStringFromEnum(fontFamily),
-          color: AppColors.blueGrey,
-          fontSize: 13,
-          fontWeight: FontWeight.w700);
-
-  static TextStyle textBlueGreyLabel1(
-          {FontFamily fontFamily = FontFamily.Lato}) =>
-      TextStyle(
-        fontFamily: getStringFromEnum(fontFamily),
-        color: AppColors.blueGrey,
-        fontSize: 12,
-      );
-
-  static TextStyle textBlueGreyLabel2(
-          {FontFamily fontFamily = FontFamily.Lato}) =>
-      TextStyle(
-        fontFamily: getStringFromEnum(fontFamily),
-        color: AppColors.blueGrey,
-        fontSize: 12,
-        fontWeight: FontWeight.bold,
-      );
-
-  static TextStyle textBlueGreyButton(
-          {FontFamily fontFamily = FontFamily.Lato}) =>
-      TextStyle(
-        fontFamily: getStringFromEnum(fontFamily),
-        color: AppColors.blueGrey,
-        fontSize: 15,
-        fontWeight: FontWeight.bold,
-      );
-
-  static TextStyle textBlueGreyWithSize(
-          {@required double fontSize,
-          FontWeight fontWeight,
-          FontStyle fontStyle,
-          FontFamily fontFamily = FontFamily.Lato}) =>
-      TextStyle(
-        fontFamily: getStringFromEnum(fontFamily),
-        color: AppColors.blueGrey,
-        fontSize: fontSize,
-        fontWeight: fontWeight ?? FontWeight.normal,
-        fontStyle: fontStyle ?? FontStyle.normal,
-      );
-
-  static TextStyle textBottomBarWithColor(
-          {@required Color color, FontFamily fontFamily = FontFamily.Lato}) =>
-      TextStyle(
-        fontFamily: getStringFromEnum(fontFamily),
-        color: color,
-        fontSize: 10,
-        fontWeight: FontWeight.bold,
-      );
-
   static TextStyle textSearchHint({FontFamily fontFamily = FontFamily.Lato}) =>
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
-        fontSize: 15,
+        fontSize: text_size,
         color: AppColors.silver,
       );
 
@@ -419,7 +256,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.silver,
-        fontSize: 15,
+        fontSize: text_large_size,
       );
 
   static TextStyle textGreyTwoTitle(
@@ -427,7 +264,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.grayTwo,
-        fontSize: 18,
+        fontSize: text_large_size,
         fontWeight: FontWeight.bold,
       );
 
@@ -436,7 +273,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.grayTwo,
-        fontSize: 15,
+        fontSize: text_size,
       );
 
   static TextStyle textGreyTwoBody2(
@@ -444,7 +281,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.grayTwo,
-        fontSize: 15,
+        fontSize: text_size,
         fontWeight: FontWeight.bold,
       );
 
@@ -453,7 +290,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.grayTwo,
-        fontSize: 15,
+        fontSize: text_size,
         fontWeight: FontWeight.bold,
       );
 
@@ -473,7 +310,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.grayFour,
-        fontSize: 15,
+        fontSize: text_large_size,
       );
 
   static TextStyle textGrayFourTitle(
@@ -481,7 +318,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.grayFour,
-        fontSize: 18,
+        fontSize: text_large_size,
         fontWeight: FontWeight.bold,
       );
 
@@ -490,7 +327,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.grayFour,
-        fontSize: 15,
+        fontSize: text_size,
       );
 
   static TextStyle textGrayFourBody2(
@@ -498,7 +335,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.grayFour,
-        fontSize: 15,
+        fontSize: text_size,
         fontWeight: FontWeight.bold,
       );
 
@@ -507,7 +344,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.grayFour,
-        fontSize: 15,
+        fontSize: text_size,
         fontWeight: FontWeight.bold,
       );
 
@@ -520,31 +357,6 @@ class TextStyleOption {
         color: AppColors.grayFour,
         fontSize: fontSize,
         fontWeight: fontWeight ?? FontWeight.normal,
-      );
-
-  static TextStyle textRedTitle({FontFamily fontFamily = FontFamily.Lato}) =>
-      TextStyle(
-        fontFamily: getStringFromEnum(fontFamily),
-        color: AppColors.redPink,
-        fontSize: 18,
-        fontWeight: FontWeight.bold,
-      );
-
-  static TextStyle textRedPinkBody1(
-          {FontFamily fontFamily = FontFamily.Lato}) =>
-      TextStyle(
-        fontFamily: getStringFromEnum(fontFamily),
-        color: AppColors.redPink,
-        fontSize: 15,
-      );
-
-  static TextStyle textRedPinkBody2(
-          {FontFamily fontFamily = FontFamily.Lato}) =>
-      TextStyle(
-        fontFamily: getStringFromEnum(fontFamily),
-        color: AppColors.redPink,
-        fontSize: 15,
-        fontWeight: FontWeight.bold,
       );
 
   static TextStyle textUnderline(
@@ -565,7 +377,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.charcoal,
-        fontSize: fontSize ?? 20,
+        fontSize: fontSize ?? text_large_size,
         fontWeight: fontWeight ?? FontWeight.normal,
       );
 
@@ -573,7 +385,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.charcoal,
-        fontSize: 32,
+        fontSize: title_size,
         fontWeight: FontWeight.bold,
       );
 
@@ -581,7 +393,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.charcoal,
-        fontSize: 32,
+        fontSize: title_size,
         fontWeight: FontWeight.w400,
       );
 
@@ -589,7 +401,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.charcoal,
-        fontSize: 18,
+        fontSize: text_large_size,
         fontWeight: FontWeight.bold,
       );
 
@@ -597,7 +409,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.charcoal,
-        fontSize: 18,
+        fontSize: text_large_size,
         fontWeight: FontWeight.w400,
       );
 
@@ -606,7 +418,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.charcoal,
-        fontSize: 15,
+        fontSize: text_size,
       );
 
   static TextStyle textCharcoalBody2(
@@ -614,7 +426,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.charcoal,
-        fontSize: 15,
+        fontSize: text_size,
         fontWeight: FontWeight.bold,
       );
 
@@ -623,7 +435,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.charcoal,
-        fontSize: 13,
+        fontSize: text_small_size,
       );
 
   static TextStyle textCharcoalBody4(
@@ -631,7 +443,7 @@ class TextStyleOption {
       TextStyle(
           fontFamily: getStringFromEnum(fontFamily),
           color: AppColors.charcoal,
-          fontSize: 13,
+          fontSize: text_small_size,
           fontWeight: FontWeight.w700);
 
   static TextStyle textBlackWithSize(
@@ -641,7 +453,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.black,
-        fontSize: fontSize ?? 20,
+        fontSize: fontSize ?? text_large_size,
         fontWeight: fontWeight ?? FontWeight.normal,
       );
 
@@ -649,7 +461,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.black,
-        fontSize: 32,
+        fontSize: title_size,
         fontWeight: FontWeight.bold,
       );
 
@@ -657,7 +469,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.black,
-        fontSize: 32,
+        fontSize: title_size,
         fontWeight: FontWeight.w400,
       );
 
@@ -665,7 +477,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.black,
-        fontSize: 18,
+        fontSize: text_large_size,
         fontWeight: FontWeight.bold,
       );
 
@@ -682,7 +494,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.black,
-        fontSize: 15,
+        fontSize: text_size,
       );
 
   static TextStyle textBlackBody2(
@@ -690,7 +502,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.black,
-        fontSize: 15,
+        fontSize: text_size,
         fontWeight: FontWeight.bold,
       );
 
@@ -699,7 +511,7 @@ class TextStyleOption {
       TextStyle(
         fontFamily: getStringFromEnum(fontFamily),
         color: AppColors.black,
-        fontSize: 13,
+        fontSize: text_small_size,
       );
 
   static TextStyle textBlackBody4(
@@ -707,10 +519,7 @@ class TextStyleOption {
       TextStyle(
           fontFamily: getStringFromEnum(fontFamily),
           color: AppColors.black,
-          fontSize: 13,
+          fontSize: text_small_size,
           fontWeight: FontWeight.w700);
 
 }
-
-
-final double BottomAppBarHeight = 50.0;

@@ -24,6 +24,7 @@
       <change afterPath="$PROJECT_DIR$/lib/ui/component/image.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/ui/screen/home/footer_section.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/ui/screen/home/gallery_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ui/screen/home/store_section.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/ui/screen/home/type_coffee_section.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/ui/screen/home/video_section.dart" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lib/ui/theme/app_decorator.dart" afterDir="false" />

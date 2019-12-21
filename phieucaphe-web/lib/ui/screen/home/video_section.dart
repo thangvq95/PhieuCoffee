@@ -23,7 +23,7 @@ class _VideoSectionState extends State<VideoSection> {
   void initState() {
     super.initState();
     _controller = VideoPlayerController.network(
-        'https://barista.qodeinteractive.com/wp-content/uploads/2017/02/Sequence_01_1.webm')
+      'https://uc7aa3f9f390b1b0d4314a03730e.dl.dropboxusercontent.com/cd/0/get/AuEM7PaLqB4OYkj21pFlU3YSQk7GmNLRIbIPIqX29tgaaOxrXlbUnNes0AORj4-GBQzYv-QQW70atPO9pXWTMxFOZjCMJBl_f72xFs6gfqzVYznWPoZmJSKRyqzn91CID8w/file?_download_id=7968403052415093546771884996300482842770457904278441288875316864&_notify_domain=www.dropbox.com&dl=1')
       ..initialize().then((_) {
         setState(() {});
       });
