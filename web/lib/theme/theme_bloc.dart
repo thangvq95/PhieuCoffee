@@ -114,7 +114,7 @@ ThemeState get lightTheme => ThemeState(
         title: TextStyleOption.textBusinessTitle(),
       ),
     ),
-    bottomAppBarColor: Colors.white,
+    bottomAppBarColor: Colors.blueGrey[900],
     backgroundColor: AppColors.offWhite,
     dividerTheme: DividerThemeData(
         space: 1.0, thickness: 1.0, color: AppColors.divider),

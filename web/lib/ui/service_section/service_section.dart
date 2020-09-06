@@ -22,6 +22,7 @@ class _ServiceSectionState extends State<ServiceSection> {
       height: 820,
       width: double.infinity,
       decoration: BoxDecoration(
+        color: AppColors.businessBlack,
         image: DecorationImage(
           image: NetworkImage('https://xtratheme.com/coffee/wp-content/uploads/sites/48/2018/05/par1.jpg'),
           fit: BoxFit.cover,

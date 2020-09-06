@@ -4,6 +4,9 @@ import 'package:web/theme/theme.dart';
 import 'package:web/ui/video_section/video_section.dart';
 
 class TopSection extends StatefulWidget {
+  final double opacity;
+
+  const TopSection({Key key, this.opacity}) : super(key: key);
   @override
   _TopSectionState createState() => _TopSectionState();
 }
@@ -136,7 +139,7 @@ class ProductCard extends StatefulWidget {
 }
 
 class _ProductCardState extends State<ProductCard>
-    with SingleTickerProviderStateMixin {
+    with TickerProviderStateMixin {
   bool isHover = false;
   AnimationController animationController;
   final Tween<double> turnsTween = Tween<double>(
@@ -147,8 +150,7 @@ class _ProductCardState extends State<ProductCard>
   @override
   void initState() {
     animationController = AnimationController(
-      vsync: this,
-      duration: Duration(milliseconds: 400),
+      duration: Duration(milliseconds: 400), vsync: this
     );
     super.initState();
   }
